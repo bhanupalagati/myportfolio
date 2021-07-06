@@ -1,0 +1,13 @@
+<div class="skills__container">
+    <div class="skills__container__heading">
+        Skills
+    </div>
+    <div class="skills__container__desc">
+        {{desc}}
+    </div>
+    <div class="skills__container__skill-list">
+        <mat-chip-list >
+            <mat-chip [color]="skill.color" selected *ngFor="let skill of skills"> {{skill.skill}} </mat-chip>
+        </mat-chip-list>
+    </div>
+</div>

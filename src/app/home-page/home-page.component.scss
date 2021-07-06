@@ -1,0 +1,43 @@
+.home-container {
+  font-family: 'Jost', sans-serif;
+  .introduction {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    .home-picture {
+      margin: 10px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px 10px slateblue;
+      img {
+        width: 300px;
+        height: auto;
+      }
+    }
+
+    .name-intro {
+      text-align: justify;
+      margin: 20px;
+      font-weight: 900;
+      font-size: 15px;
+    }
+
+    .main-role {
+      text-align: justify;
+      margin: 20px;
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .short-summary {
+      margin: 20px;
+      text-align: justify;
+      font-size: medium;
+    }
+
+  }
+
+}

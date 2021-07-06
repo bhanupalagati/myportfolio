@@ -1,0 +1,19 @@
+.skills__container {
+    &__heading {
+        padding: 30px;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__desc {
+        text-align: justify;
+        font-size: 18px;
+        padding: 0 20px 20px 20px;
+        font-weight: 500;
+    }
+    &__skill-list {
+        padding: 20px;
+        text-align: justify;
+    }
+}

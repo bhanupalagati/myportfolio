@@ -1,0 +1,28 @@
+$linkcolor: #0000ee;
+
+.footer__container {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &__icons {
+        display: flex;
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            flex-grow: 1;
+        }
+        a {color: $linkcolor;}         /* Unvisited link  */
+        a:visited {color: $linkcolor;} /* Visited link    */
+        a:hover {color: $linkcolor;}   /* Mouse over link */
+        a:active {color: $linkcolor;}  /* Selected link   */
+    }
+    &__text {
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: $linkcolor;
+    }
+}
