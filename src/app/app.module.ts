@@ -22,6 +22,9 @@ import { ExperienceComponent } from './professional-experience/experience/experi
 import { PapersComponent } from './professional-experience/papers/papers.component';
 import { SchoolingComponent } from './schooling/schooling.component';
 import {MatChipsModule} from '@angular/material/chips';
+import { DialogComponent } from './dialog/dialog.component';
+import { DialogContentComponent } from './dialog-content/dialog-content.component';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,9 @@ import {MatChipsModule} from '@angular/material/chips';
     ProjectsComponent,
     ExperienceComponent,
     PapersComponent,
-    SchoolingComponent
+    SchoolingComponent,
+    DialogComponent,
+    DialogContentComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +50,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MatMenuModule,
     MatTooltipModule,
     MatListModule,
-    MatChipsModule
+    MatChipsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

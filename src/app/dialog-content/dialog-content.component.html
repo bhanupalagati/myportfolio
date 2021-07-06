@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>{{data.name}}</h1>
+<div mat-dialog-content>
+    <div class="dialog__content__desc">
+        {{data.desc}}
+    </div>
+    <div class="dialog__content__duration">
+        {{data.duration}}
+    </div>
+    <h2>Tech Stach</h2>
+    <ol>
+        <li *ngFor="let item of data.learned"> {{item}} </li>
+    </ol>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="warn" *ngIf="data.gitLink" class="dialog__content__github">
+    <a [href]="data.gitLink" target="_blank"> Github </a>
+  </button>
+</div>

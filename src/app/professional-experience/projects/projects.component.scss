@@ -1,0 +1,19 @@
+.projects__container {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #5949eb;
+    color: white;
+    &__heading {
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subheader {
+        padding: 30px;
+        padding-bottom: 0px;
+        font-size: 16px;
+        text-align: center;
+    }
+}

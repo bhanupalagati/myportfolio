@@ -1,0 +1,13 @@
+<div class="card__container">
+    <div class="card__container__card" *ngFor="let cardContent of cardContents" (click)="openDialog(cardContent)">
+        <div class="card__container__card__title">
+            {{cardContent.name}}
+        </div>
+        <div class="card__container__card__duration">
+            {{cardContent.duration}}
+        </div>
+        <div class="card__container__card__desc">
+            {{cardContent.shortDesc}}
+        </div>
+    </div>
+</div>
