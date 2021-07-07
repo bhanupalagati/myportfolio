@@ -1,1 +1,27 @@
-<p>experience works!</p>
+<div class="experience__container">
+    <div class="experience__container__heading">
+        Experience
+    </div>
+    <div class="experience__container__experience" *ngFor="let employment of employmentHistory">
+        <div class="experience__container__experience__title">
+            <div class="experience__container__experience__title__icon">
+                <mat-icon>badge</mat-icon>
+            </div>
+            <div class="experience__container__experience__title__text">
+                <h1>{{employment.companyName}}</h1>
+            </div>
+        </div>
+        <div class="experience__container__experience__location">
+            {{employment.location}}
+        </div>
+        <div class="experience__container__experience__duration">
+            {{employment.duration}}
+        </div>
+        <div class="experience__container__experience__position">
+            {{employment.position}}
+        </div>
+        <div class="experience__container__experience__desc">
+            {{employment.desc}}
+        </div>
+    </div>
+</div>

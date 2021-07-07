@@ -1,0 +1,42 @@
+.achievements__container {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #5949eb;
+  color: white;
+  &__heading {
+    h1 {
+      line-height: 1.5;
+      font-size: 40px;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &__subheader {
+    padding: 30px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: #adff2f;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__awards {
+    padding: 0 20px;
+    padding-top: 15px;
+    display: flex;
+    text-align: center;
+    &__icon {
+      width: 24px;
+      padding-top: 8px;
+    }
+    &__text {
+      padding-left: 10px;
+      h1 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}

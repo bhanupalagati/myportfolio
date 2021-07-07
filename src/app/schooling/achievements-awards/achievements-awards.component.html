@@ -1,0 +1,18 @@
+<div class="achievements__container">
+    <div class="achievements__container__heading">
+        <h1>Awards and Achievements</h1>
+    </div>
+    <div class="achievements__container__subheader">
+        In this section viewers can find all my awards and achievements
+    </div>
+    <div class="achievements__container__awards" *ngFor="let achievement of achievements">
+        <div class="achievements__container__awards__icon">
+            <mat-icon>military_tech</mat-icon>
+        </div>
+        <div class="achievements__container__awards__text">
+            <h1>
+                {{achievement}}
+            </h1>
+        </div>
+    </div>
+</div>

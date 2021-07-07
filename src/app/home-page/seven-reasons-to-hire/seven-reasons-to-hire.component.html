@@ -4,7 +4,7 @@
     </div>
     <div class="seven-reasons__container__list" *ngFor="let skillset of skillsets">
         <div class="seven-reasons__container__list__heading">
-            <mat-icon matTooltip="Home">{{ skillset.iconName }}</mat-icon>
+            <mat-icon>{{ skillset.iconName }}</mat-icon>
             <p class="seven-reasons__container__list__heading__text">{{ skillset.headingName }}</p>
         </div>
         <div class="seven-reasons__container__list__options" *ngFor="let skill of skillset.skills">

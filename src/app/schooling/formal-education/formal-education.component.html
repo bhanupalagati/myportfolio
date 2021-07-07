@@ -1,0 +1,33 @@
+<div class="formal-education__container">
+    <div class="formal-education__container__heading">
+        <h1>
+            formal education
+        </h1>
+    </div>
+    <div class="formal-education__container__schooling" *ngFor="let college of colleges">
+        <div class="formal-education__container__schooling__title">
+            <div class="formal-education__container__schooling__title__icon">
+                <i class="fa fa-university"></i>
+                <!-- <mat-icon>badge</mat-icon> -->
+            </div>
+            <div class="formal-education__container__schooling__title__text">
+                <h1>{{college.name}}</h1>
+            </div>
+        </div>
+        <div class="formal-education__container__schooling__location">
+            {{college.place}}
+        </div>
+        <div class="formal-education__container__schooling__duration">
+            {{college.durations}}
+        </div>
+        <div class="formal-education__container__schooling__position">
+            {{college.course}}
+        </div>
+        <div class="formal-education__container__schooling__desc">
+            {{college.Description}}
+        </div>
+        <div class="formal-education__container__schooling__marks">
+            {{college.marks}}
+        </div>
+    </div>
+</div>

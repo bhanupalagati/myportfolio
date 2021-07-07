@@ -1,0 +1,65 @@
+.papers__container {
+  padding: 20px;
+  padding-top: 40px;
+  &__heading {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__paper {
+    &__title {
+      padding-top: 30px;
+      display: flex;
+      text-align: center;
+      &__icon {
+        width: 50px;
+        padding-top: 5px;
+      }
+      &__text {
+        flex-grow: 1;
+        h1 {
+          font-size: 28px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__desc {
+      padding-top: 20px;
+      font-size: 16px;
+    }
+
+    &__published {
+      padding-top: 10px;
+      font-size: 16px;
+      color: grey;
+      font-weight: 600;
+    }
+
+    &__presented {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
+      color: grey;
+      font-weight: 500;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  } /* Unvisited link  */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  } /* Visited link    */
+  a:hover {
+    color: white;
+    text-decoration: none;
+  } /* Mouse over link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  } /* Selected link   */
+}

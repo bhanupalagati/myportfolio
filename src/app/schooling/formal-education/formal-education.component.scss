@@ -1,17 +1,19 @@
-.experience__container {
-    margin-top: 40px;
+.formal-education__container {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #5949eb;
     color: white;
     &__heading {
-        font-size: 40px;
+        h1 {
+          line-height: 1.5;
+            font-size: 40px;
         font-weight: 900;
         text-align: center;
         text-transform: uppercase;
+        }
     }
 
-    &__experience {
+    &__schooling {
         padding: 0 20px;
         &__title {
           padding-top: 30px;
@@ -19,7 +21,10 @@
           text-align: center;
           &__icon {
             width: 24px;
-            padding-top: 2px;
+            padding-top: 5px;
+            .fa {
+                font-size: 20px;
+            }
           }
           &__text {
               padding-left: 10px;
@@ -36,12 +41,19 @@
           text-align: justify;
         }
     
-        &__position {
+        &__course {
           padding-top: 10px;
           font-size: 16px;
           color: black;
           font-weight: 600;
         }
+
+        &__marks {
+            padding-top: 10px;
+            font-size: 16px;
+            color: black;
+            font-weight: 600;
+          }
 
         &__location {
             padding-top: 10px;

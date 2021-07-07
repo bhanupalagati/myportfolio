@@ -12,9 +12,21 @@
     }
     &__github {
         margin-left: 30px;
-        a {color: black;}         /* Unvisited link  */
-        a:visited {color: black;} /* Visited link    */
-        a:hover {color: black;}   /* Mouse over link */
-        a:active {color: black;}  /* Selected link   */
+        a {
+            color: white;
+            text-decoration: none;
+          } /* Unvisited link  */
+          a:visited {
+            color: white;
+            text-decoration: none;
+          } /* Visited link    */
+          a:hover {
+            color: white;
+            text-decoration: none;
+          } /* Mouse over link */
+          a:active {
+            color: white;
+            text-decoration: none;
+          } /* Selected link   */
     }
 }

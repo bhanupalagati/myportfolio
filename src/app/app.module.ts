@@ -25,6 +25,11 @@ import {MatChipsModule} from '@angular/material/chips';
 import { DialogComponent } from './dialog/dialog.component';
 import { DialogContentComponent } from './dialog-content/dialog-content.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+import { FormalEducationComponent } from './schooling/formal-education/formal-education.component';
+import { CertificationsComponent } from './schooling/certifications/certifications.component';
+import { AchievementsAwardsComponent } from './schooling/achievements-awards/achievements-awards.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +44,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     PapersComponent,
     SchoolingComponent,
     DialogComponent,
-    DialogContentComponent
+    DialogContentComponent,
+    FormalEducationComponent,
+    CertificationsComponent,
+    AchievementsAwardsComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +59,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatTooltipModule,
     MatListModule,
     MatChipsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

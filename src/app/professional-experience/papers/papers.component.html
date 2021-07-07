@@ -1,1 +1,27 @@
-<p>papers works!</p>
+<div class="papers__container">
+    <div class="papers__container__heading">
+        Publications
+    </div>
+    <div class="papers__container__paper" *ngFor="let publication of publications">
+        <div class="papers__container__paper__title">
+            <div class="papers__container__paper__title__icon">
+                <mat-icon>star</mat-icon>
+            </div>
+            <div class="papers__container__paper__title__text">
+                <h1> {{publication.title}} </h1>
+            </div>
+        </div>
+        <p class="papers__container__paper__desc">
+            {{publication.desc}}
+        </p>
+        <p class="papers__container__paper__published">
+            {{publication.publishedIn}}
+        </p>
+        <p class="papers__container__paper__presented">
+            {{publication.presentedAt}}
+        </p>
+        <button mat-raised-button color="primary">
+            <a [href]="publication.accessLink" target="_blank">Access Link</a>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="certifications__container">
+    <div class="certifications__container__heading">
+        Certifications
+    </div>
+    <div class="certifications__container__subheader">
+      Viewers can expand the below accordions to see description about each certification and can view certificate by clicking the button.
+    </div>
+    <mat-accordion>
+        <mat-expansion-panel *ngFor="let certificate of certificates">
+          <mat-expansion-panel-header class="certifications__container__header">
+            <mat-panel-title class="certifications__container__header__name">
+              {{certificate.name}}
+            </mat-panel-title>
+            <mat-panel-description class="certifications__container__header__description">
+              {{certificate.doneAt}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="certifications__container__desc">
+            <p class="certifications__container__desc__text">
+                {{certificate.description}}
+            </p>
+            <button mat-raised-button color="primary">
+                <a [href]="certificate.link" target="_blank">View Certificate</a>
+            </button>
+          </div>
+        </mat-expansion-panel>
+
+      </mat-accordion>
+</div>
