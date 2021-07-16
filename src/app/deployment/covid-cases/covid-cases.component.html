@@ -1,0 +1,77 @@
+<div class="covid-cases__container">
+    <div class="covid-cases__container__desc-1">
+        <div class="covid-cases__container__desc-1__title">
+            <h1>{{descriptions.part1.title}}</h1>
+        </div>
+        <div class="covid-cases__container__desc-1__desc">
+            <p>{{descriptions.part1.description}}</p>
+        </div>
+        <div class="covid-cases__container__desc-1__info">
+            <p>{{descriptions.part1.datasetInfo}}</p>
+        </div>
+        <div class="covid-cases__container__desc-1__button">
+            <button mat-raised-button color="primary">
+                <a [href]="descriptions.part1.link" target="_blank">Access Dataset</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="covid-cases__container__desc-2">
+        <div class="covid-cases__container__desc-2__title">
+            <h1>{{descriptions.part2.title}}</h1>
+        </div>
+        <div class="covid-cases__container__desc-2__process">
+            <p>{{descriptions.part2.process}}</p>
+        </div>
+        <div class="covid-cases__container__desc-2__scaling">
+            <p>{{descriptions.part2.scaling}}</p>
+        </div>
+        <div class="covid-cases__container__desc-2__splitting">
+            <p>{{descriptions.part2.splitting}}</p>
+        </div>
+        <div class="covid-cases__container__desc-2__model">
+            <p>{{descriptions.part2.model}}</p>
+        </div>
+        <div class="covid-cases__container__desc-2__future">
+            <p>{{descriptions.part2.future}}</p>
+        </div>
+        <div class="covid-cases__container__desc-2__button">
+            <button mat-raised-button color="accent" >
+                <a [href]="descriptions.part2.link" target="_blank">Access NoteBook</a>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <div class="covid-cases__container__graph-details">
+            <div class="covid-cases__container__graph-details__title">
+                <h1>{{descriptions.part3.graphTitle}}</h1>
+            </div>
+            <div class="covid-cases__container__graph-details__graph" *ngIf="!dataLoading">
+                <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [legend]="legend"
+                    [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+                    [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline" [results]="multi">
+                </ngx-charts-line-chart>
+            </div>
+            <div *ngIf="dataLoading" class="covid-cases__container__graph-details__loading">
+                Data is currently loading once that's done we will render the graph.
+            </div>
+        </div>
+    </div>
+
+    <div class="covid-cases__container__desc-3">
+        <div class="covid-cases__container__desc-3__title">
+            <h1>{{descriptions.part3.title}}</h1>
+        </div>
+        <div class="covid-cases__container__desc-3__axis-info">
+            <p>{{descriptions.part3.xaxis}}</p>
+        </div>
+        <div class="covid-cases__container__desc-3__graph">
+            <p>{{descriptions.part3.graph}}</p>
+        </div>
+        <div class="covid-cases__container__desc-3__desc">
+            <p>{{descriptions.part3.desc}}</p>
+        </div>
+    </div>
+
+</div>

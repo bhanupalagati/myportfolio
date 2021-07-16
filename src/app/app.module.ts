@@ -6,14 +6,9 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// Material imports
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
+
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import {MatTooltipModule} from '@angular/material/tooltip';
 import { SevenReasonsToHireComponent } from './home-page/seven-reasons-to-hire/seven-reasons-to-hire.component';
-import {MatListModule} from '@angular/material/list';
 import { FooterComponent } from './footer/footer.component';
 import { ProfessionalExperienceComponent } from './professional-experience/professional-experience.component';
 import { SkillsComponent } from './professional-experience/skills/skills.component';
@@ -21,15 +16,15 @@ import { ProjectsComponent } from './professional-experience/projects/projects.c
 import { ExperienceComponent } from './professional-experience/experience/experience.component';
 import { PapersComponent } from './professional-experience/papers/papers.component';
 import { SchoolingComponent } from './schooling/schooling.component';
-import {MatChipsModule} from '@angular/material/chips';
 import { DialogComponent } from './dialog/dialog.component';
 import { DialogContentComponent } from './dialog-content/dialog-content.component';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatButtonModule} from '@angular/material/button';
 import { FormalEducationComponent } from './schooling/formal-education/formal-education.component';
 import { CertificationsComponent } from './schooling/certifications/certifications.component';
 import { AchievementsAwardsComponent } from './schooling/achievements-awards/achievements-awards.component';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { HttpClientModule } from '@angular/common/http';
+import { DeploymentModule } from './deployment/deployment.module';
+import { SharedModule } from './shared/shared.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,15 +48,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatMenuModule,
-    MatTooltipModule,
-    MatListModule,
-    MatChipsModule,
-    MatDialogModule,
-    MatButtonModule,
-    MatExpansionModule
+    HttpClientModule,
+    DeploymentModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

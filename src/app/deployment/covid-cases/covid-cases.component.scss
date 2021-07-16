@@ -1,0 +1,128 @@
+.covid-cases__container {
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 500;
+    &__desc-1 {
+        padding: 0 30px;
+      &__title {
+          padding-top: 20px;
+          h1 {
+              line-height: 1.5;
+              font-size: 40px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+            }
+      }
+      &__desc {
+          padding-top: 20px;
+          font-size: 16px;
+          text-align: justify;
+      }
+      &__info {
+          padding-top: 20px;
+          font-size: 16px;
+          text-align: justify;
+          color: #504e4e;
+          font-weight: bold;
+      }
+      &__button {
+          padding-top: 20px;
+          width: 100%;
+          text-align: center;
+      }
+    }
+    &__desc-2 {
+      padding: 0 30px;
+      margin-top: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #5949eb;
+      color: white;
+      &__title {
+          h1 {
+              line-height: 1.5;
+              font-size: 40px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+            }
+      }
+      &__process {
+      }
+      &__scaling {
+      }
+      &__splitting {
+      }
+      &__model {
+      }
+      &__future {
+      }
+      &__button {
+          padding-top: 20px;
+          width: 100%;
+          text-align: center;
+      }
+    }
+    &__graph-details {
+      padding: 0 30px;
+      &__title {
+          padding: 30px 0;
+          h1 {
+              line-height: 1.5;
+              font-size: 40px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+            }
+      }
+      &__graph {
+          height: 310px;
+      }
+      &__loading {
+          text-align: center;
+      }
+    }
+    &__desc-3 {
+      padding: 0 20px;
+      margin-top: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #5949eb;
+      color: white;
+      clear: left;
+      &__title {
+          h1 {
+              line-height: 1.5;
+              font-size: 40px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+            }
+      }
+      &__axis-info {
+      }
+      &__graph {
+      }
+      &__desc {
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    } /* Unvisited link  */
+    a:visited {
+      color: white;
+      text-decoration: none;
+    } /* Visited link    */
+    a:hover {
+      color: white;
+      text-decoration: none;
+    } /* Mouse over link */
+    a:active {
+      color: white;
+      text-decoration: none;
+    } /* Selected link   */
+  }
+  

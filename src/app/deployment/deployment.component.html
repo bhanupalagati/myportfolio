@@ -1,0 +1,34 @@
+<div class="deployments__container">
+    <div class="deployments__container__heading">
+        Deployments
+    </div>
+    <div class="deployments__container__subheader">
+      Viewers can expand the below accordions to see description about each Machine Learning and Deep Learning Deployment and can view more about project by clicking the button.
+    </div>
+    <mat-accordion>
+        <mat-expansion-panel *ngFor="let deployment of deployments">
+          <mat-expansion-panel-header class="deployments__container__header">
+            <mat-panel-title class="deployments__container__header__name">
+              {{deployment.name}}
+            </mat-panel-title>
+            <mat-panel-description class="deployments__container__header__description">
+              {{deployment.oneWord}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="deployments__container__desc">
+            <p class="deployments__container__desc__text">
+                {{deployment.description}}
+            </p>
+            <button mat-raised-button color="primary">
+                <a [href]="deployment.link">Navigate to Project</a>
+            </button>
+          </div>
+        </mat-expansion-panel>
+
+      </mat-accordion>
+</div>
+
+
+<!-- <div class="deployment__container" [ngClass]="{'deployment__container__mobile':mobile}">
+    <app-covid-cases></app-covid-cases>
+</div> -->
