@@ -12,7 +12,7 @@ export class CovidCasesComponent implements OnInit {
     part1: {
       title: 'New Covid Cases Prediction',
       description: `This dataset consists of covid cases from all the states in India from January 30th
-      2020 to July 7th 2021. If there is a missing entry from a state in any given day it means there are
+      2020 to July 7th 2021. If there is a missing entry from a state in any given day it means there is
       no new information from that state on that day. This dataset provides information related to the Cured,
       Deaths, and Confirmed cases. This dataset consists of 525 unique days and 16849 records.`,
       datasetInfo: 'This dataset is downloaded from Kaggle and provided by SRK and 2 others.',
@@ -38,11 +38,11 @@ export class CovidCasesComponent implements OnInit {
     part3: {
       title: 'About the graph',
       graphTitle: 'Time Series Line Graph Representation',
-      xaxis: `The numbering you see on the x-axis is the day span for 30th January 2020. In order to avoid cluttering with
-      multiple large values we are using equivalent day indices. y-axis shows the number of days in the given day.`,
-      graph: `The graph is interactive and one can leans more about the points by hovering. Moreover, we can increase or
+      xaxis: `The numbering you that you observe on the x-axis is the days span from 30th January 2020 to July 7th 2021. In order to avoid cluttering with
+      multiple large values we are using equivalent day indices. y-axis shows the number of cases registered on the given day.`,
+      graph: `The graph is interactive and one can learn more about the points by hovering. Moreover, we can increase or
       reduce the render area using the bar below the graph. Please use these features for better understanding.`,
-      desc: `New cases indicate all the new cases that was registered in the given day. Training represents the predicted
+      desc: `New cases indicate all the new cases that was registered on a given day. Training represents the predicted
       values of new cases for the given day which are used for training. Testing represents the prediction of new cases which
       are not used in training to measure the performance. Future represents the actual use case scenario where we will predict
       the new cases for next 30 days and make ourselves prepared for the action.`
