@@ -1,0 +1,166 @@
+.pokemon-cluster__container {
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 500;
+    &__desc-1 {
+        padding: 0 30px;
+      &__title {
+          padding-top: 20px;
+          h1 {
+              line-height: 1.5;
+              font-size: 40px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+            }
+      }
+      &__desc {
+          padding-top: 20px;
+          font-size: 16px;
+          text-align: justify;
+      }
+      &__info {
+          padding-top: 20px;
+          font-size: 16px;
+          text-align: justify;
+          color: #504e4e;
+          font-weight: bold;
+      }
+      &__button {
+          padding-top: 20px;
+          width: 100%;
+          text-align: center;
+      }
+    }
+    &__desc-2 {
+      padding: 0 30px;
+      margin-top: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #5949eb;
+      color: white;
+      &__title {
+          h1 {
+              line-height: 1.5;
+              font-size: 40px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+            }
+      }
+      &__process {
+      }
+      &__algorithm {
+      }
+      &__button {
+          padding-top: 20px;
+          width: 100%;
+          text-align: center;
+      }
+    }
+    &__graph-details {
+      padding: 0 30px;
+      &__title {
+          padding: 30px 0;
+          h1 {
+              line-height: 1.5;
+              font-size: 40px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+            }
+      }
+      &__graph {
+          height: 700px;
+      }
+      &__loading {
+          text-align: center;
+      }
+        font-size: 16px;
+        text-align: justify;
+        font-weight: 500;
+      &__xaxis {
+          clear: left;
+          padding-top: 30px;
+      }
+      &__graph-desc {
+        padding-top: 20px;
+    }
+    &__desc {
+        padding-top: 20px;
+    }
+
+    }
+    &__part-4 {
+      padding: 20px;
+      margin-top: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #5949eb;
+      color: white;
+      clear: left;
+      &__title {
+          h1 {
+              line-height: 1.5;
+              font-size: 40px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+            }
+      }
+      &__desc {
+        padding-top: 20px;
+        font-size: 16px;
+        text-align: justify;
+    }
+      &__form {
+        padding: 30px 0;
+        &__item {
+          max-width: 900px;
+          display: flex;
+          align-items: center;
+          text-align: justify;
+          justify-content: center;
+          &__label {
+            width: 100px;
+          }
+          &__slider {
+            width: 300px;
+            color: white;
+          }
+        }
+        &__submit {
+          text-align: center;
+          padding-top: 20px;
+        }
+      }
+      &__prediction {
+        padding-top: 20px;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+
+        &__value {
+          font-weight: bold;
+        }
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    } /* Unvisited link  */
+    a:visited {
+      color: white;
+      text-decoration: none;
+    } /* Visited link    */
+    a:hover {
+      color: white;
+      text-decoration: none;
+    } /* Mouse over link */
+    a:active {
+      color: white;
+      text-decoration: none;
+    } /* Selected link   */
+  }
+  

@@ -1,0 +1,85 @@
+<div class="pokemon-cluster__container">
+  <div class="pokemon-cluster__container__desc-1">
+    <div class="pokemon-cluster__container__desc-1__title">
+      <h1>{{descriptions.part1.title}}</h1>
+    </div>
+    <div class="pokemon-cluster__container__desc-1__desc">
+      <p>{{descriptions.part1.description}}</p>
+    </div>
+    <div class="pokemon-cluster__container__desc-1__info">
+      <p>{{descriptions.part1.datasetInfo}}</p>
+    </div>
+    <div class="pokemon-cluster__container__desc-1__button">
+      <button mat-raised-button color="primary">
+        <a [href]="descriptions.part1.link" target="_blank">Access Dataset</a>
+      </button>
+    </div>
+  </div>
+
+  <div class="pokemon-cluster__container__desc-2">
+    <div class="pokemon-cluster__container__desc-2__title">
+      <h1>{{descriptions.part2.title}}</h1>
+    </div>
+    <div class="pokemon-cluster__container__desc-2__process">
+      <p>{{descriptions.part2.process}}</p>
+    </div>
+    <div class="pokemon-cluster__container__desc-2__algorithm">
+      <p>{{descriptions.part2.Algorithm}}</p>
+    </div>
+    <div class="pokemon-cluster__container__desc-2__button">
+      <button mat-raised-button color="accent">
+        <a [href]="descriptions.part2.link" target="_blank">Access NoteBook</a>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <div class="pokemon-cluster__container__graph-details">
+      <div class="pokemon-cluster__container__graph-details__title">
+        <h1>{{descriptions.part3.graphTitle}}</h1>
+      </div>
+      <div class="pokemon-cluster__container__graph-details__graph" *ngIf="pokemonData">
+        <ngx-charts-bubble-chart [view]="view" [scheme]="colorScheme" [results]="pokemonData" [xAxis]="showXAxis"
+          [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [xScaleMin]="xScaleMin" [xScaleMax]="xScaleMax"
+          [yScaleMin]="yScaleMin" [yScaleMax]="yScaleMax" [minRadius]="minRadius" [maxRadius]="maxRadius"
+          (select)="onSelect($event)">
+        </ngx-charts-bubble-chart>
+      </div>
+      <div *ngIf="!pokemonData" class="pokemon-cluster__container__graph-details__loading">
+        Data is currently loading once that's done we will render the graph.
+      </div>
+      <div class="pokemon-cluster__container__graph-details__xaxis">
+        <p>{{descriptions.part3.xaxis}}</p>
+      </div>
+      <div class="pokemon-cluster__container__graph-details__graph-desc">
+        <p>{{descriptions.part3.graph}}</p>
+      </div>
+      <div class="pokemon-cluster__container__graph-details__desc">
+        <p>{{descriptions.part3.desc}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pokemon-cluster__container__part-4" *ngIf="maxBorders">
+    <div class="pokemon-cluster__container__part-4__title">
+      <h1>{{descriptions.part4.title}}</h1>
+    </div>
+    <div class="pokemon-cluster__container__part-4__desc">
+      {{descriptions.part4.desc}}
+    </div>
+    <div class="pokemon-cluster__container__part-4__form">
+      <div class="pokemon-cluster__container__part-4__form__item" *ngFor="let m of maxBorders; let i = index">
+        <label class="pokemon-cluster__container__part-4__form__item__label">{{labels[i]}}</label>
+        <mat-slider class="pokemon-cluster__container__part-4__form__item__slider" thumbLabel tickInterval="1" step="1" [min]="minBorders[i]" [max]="maxBorders[i]" [(ngModel)]="responses[i]" [vertical]="false"
+          aria-label="units" (ngModelChange)="valueUpdated()"></mat-slider>
+      </div>
+      <div class="pokemon-cluster__container__part-4__form__submit">
+        <button mat-raised-button color="accent" (click)="predictPokemon()">Classify my Pokemon</button>
+      </div>
+    </div>
+    <div class="pokemon-cluster__container__part-4__prediction" *ngIf="prediction">
+      Your Pokemon is a <span class="pokemon-cluster__container__part-4__prediction__value">{{prediction}}</span> with the following values {{responses}}
+    </div>
+  </div>
+</div>

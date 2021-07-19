@@ -17,6 +17,16 @@ export class DeploymentComponent implements OnInit {
       the behavior of next 30 days. There is clear description in the dedicated project
       page please do checkout.`,
       link: '/deployments/covid-cases'
+    },
+
+    {
+      name: 'The Pokemon Clustering App',
+      oneWord: 'Using K Means Clustering',
+      description: `After converting the dataset with 6 basic stats into 2 stats a K-Means
+      clustering algorithm is applied and a interface is provided for the user where one can
+      configure new stats for a hypothetical pokemon and predict into which cluster the pokemon
+      will fall into.`,
+      link: '/deployments/pokemon-cluster'
     }
   ]
   constructor() { }

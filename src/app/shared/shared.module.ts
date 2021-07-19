@@ -11,6 +11,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSliderModule} from '@angular/material/slider';
 
 const materialModules = [
   MatToolbarModule,
@@ -22,6 +23,7 @@ const materialModules = [
     MatDialogModule,
     MatButtonModule,
     MatExpansionModule,
+    MatSliderModule
 ]
 
 @NgModule({

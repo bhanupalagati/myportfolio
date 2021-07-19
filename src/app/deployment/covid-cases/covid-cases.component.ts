@@ -83,7 +83,7 @@ export class CovidCasesComponent implements OnInit {
   }
 
   showData() {
-    return this.urlService.getData().subscribe(res => {
+    return this.urlService.getCovidData().subscribe(res => {
       // [activecases, newcases, training, testing, future]
       this.covidAnalytics = res['result'];
       this.multi = [
