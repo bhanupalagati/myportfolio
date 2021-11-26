@@ -1,5 +1,12 @@
 .home-container {
   font-family: 'Jost', sans-serif;
+  marquee{
+    font-size: 18px;
+    font-weight: 800;
+    color: #f37021;
+    font-family: sans-serif;
+    z-index: 999;
+    }
   .introduction {
     margin: 20px;
     display: flex;
@@ -11,7 +18,7 @@
       width: 300px;
       height: 300px;
       border-radius: 50%;
-      box-shadow: 0 0 10px 10px slateblue;
+      box-shadow: 0 0 10px 10px #00529b;
       img {
         width: 300px;
         height: auto;
