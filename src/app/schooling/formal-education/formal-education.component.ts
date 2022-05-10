@@ -11,13 +11,12 @@ export class FormalEducationComponent implements OnInit {
     {
       name: 'University of Florida',
       place: 'Gainesville, Florida, USA.',
-      durations: 'August 2021 - Present',
+      durations: 'August 2021 - December 2022',
       course: 'Masters of Computer Science',
-      Description: `Currently I am doing my first semester at UFL and enrolled in interesting subjects like Analysis of Algorithms,
-      Mathematics for Intelligent Systems, and Distributed Operating Systems. In the coming semester I enrolled in ML with Genomics,
-      Neural Networks, and Software Engineering. Along with the learning experience UFL is allowing me to explore my interests in
-      various extra-curricular activities. GO GATORS!!!!!!!!!!!!`,
-      marks: 'Will be updated',
+      Description: `Currently I am pursuing masters program at the University of Florida and enrolled in interesting subjects like Analysis of Algorithms,
+      Mathematics for Intelligent Systems, Distributed Operating Systems, Software Engineering, and Neural Networks. As a student software developer I have designed
+      websites and packages to process gene data.`,
+      marks: 'C.G.P.A 3.94 / 4',
     },
     {
       name: 'Hindustan Institute of Technology and Science',

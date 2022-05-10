@@ -9,6 +9,15 @@ export class ExperienceComponent implements OnInit {
 
   employmentHistory = [
     {
+      companyName: 'University of Florida',
+      location: 'Gainesville, USA',
+      duration: 'February 2022 - May 2022',
+      position: 'Student Software Developer',
+      desc: `Developed interactive web app to publish research result using Angular, Nest, MySQL.
+      Implemented automatic gene transcript generation from gene data with parallel processing in python.
+      Developed a gene graph annotations package which saved 40 research hours every week and human errors.`
+    },
+    {
       companyName: 'ValueLabs LLP',
       location: 'Hyderabad, India',
       duration: 'April 2019 - August 2021',

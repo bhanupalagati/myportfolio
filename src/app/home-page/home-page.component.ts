@@ -14,6 +14,7 @@ export class HomePageComponent implements OnInit {
   several frontend, backend technologies.`;
   summaryPart2 = `Currently I am pursuing Masters of Computer Science at University of Florida. I am currently going through
   several complex Machine Learning and Deep Learning related subjects.`;
+  developerView = true;
   constructor() { }
 
   ngOnInit(): void {

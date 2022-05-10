@@ -1,5 +1,4 @@
 <div class="home-container">
-  <marquee>This website shows my web development skills. To see my ML skills visit the last menu item.</marquee>
   <div class="introduction">
     <div class="home-picture">
       <img src="/assets/home-pic.png" alt="">
@@ -14,7 +13,10 @@
       <p>{{ summaryPart1 }}</p>
       <p>{{ summaryPart2 }}</p>
     </div>
+    <button mat-raised-button color="primary" (click)="developerView = !developerView">{{ developerView ? "Looking for a Data Scientist?" : "Looking for a Software Development Engineer?" }}</button>
+
   </div>
-  <app-seven-reasons-to-hire></app-seven-reasons-to-hire>
+  <app-hire-developer-reasons *ngIf="developerView"></app-hire-developer-reasons>
+  <app-seven-reasons-to-hire *ngIf="!developerView"></app-seven-reasons-to-hire>
 </div>
 

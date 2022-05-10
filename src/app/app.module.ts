@@ -24,6 +24,7 @@ import { AchievementsAwardsComponent } from './schooling/achievements-awards/ach
 import { HttpClientModule } from '@angular/common/http';
 import { DeploymentModule } from './deployment/deployment.module';
 import { SharedModule } from './shared/shared.module';
+import { HireDeveloperReasonsComponent } from './home-page/hire-developer-reasons/hire-developer-reasons.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SharedModule } from './shared/shared.module';
     DialogContentComponent,
     FormalEducationComponent,
     CertificationsComponent,
-    AchievementsAwardsComponent
+    AchievementsAwardsComponent,
+    HireDeveloperReasonsComponent
   ],
   imports: [
     BrowserModule,

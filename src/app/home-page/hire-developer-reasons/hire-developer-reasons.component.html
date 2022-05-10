@@ -1,0 +1,17 @@
+<div class="reasons__container">
+    <div class="reasons__container__title">
+        <h1>Seven Reasons to Hire me as a Software Development Engineer.</h1>
+    </div>
+    <div class="reasons__container__list" *ngFor="let skillset of skillsets">
+        <div class="reasons__container__list__heading">
+            <mat-icon>{{ skillset.iconName }}</mat-icon>
+            <p class="reasons__container__list__heading__text">{{ skillset.headingName }}</p>
+        </div>
+        <div class="reasons__container__list__options" *ngFor="let skill of skillset.skills">
+            <p style="display: inline;">{{skill}}</p>
+        </div>
+        <div class="reasons__container__list__desc">
+            <p>{{skillset.desc}}</p>
+        </div>
+    </div>
+</div>

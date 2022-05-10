@@ -10,6 +10,45 @@ import { DialogContentComponent } from '../dialog-content/dialog-content.compone
 export class DialogComponent implements OnInit {
   cardContents = [
     {
+      name: 'Research Publications App',
+      duration: 'February 2022 - May 2022',
+      shortDesc: 'Developed application to publish research findings. Developed scripts to process huge volumes of Gene data',
+      desc: `Developed a web application to publish the research findings with graphs, comparisons, and tables. In order to process
+            the huge volumes of Gene data I have developed several scripts which automated graph generation, data preprocessing,
+            calculating gene distance. Developed a package to annotate the graph which saved 40 research hours every week and
+            significantly reduced the human errors.`,
+      gitLink: '',
+      learned: ['Angular', 'NodeJs', 'MySQL', 'NestJs', 'HTML & CSS', 'Python', 'JEST Unit Testing', 'JEST Integration Testing']
+    },
+    {
+      name: 'GatorMART',
+      duration: 'January 2022 - April 2022',
+      shortDesc: 'GartorMart provides a way for the users to sell and buy used or new products.',
+      desc: `GartorMart provides a way for the users to sell and buy used or new products. The motivation behind the idea is
+      there are many applications where we could buy and sell the products, but there is less focus on the target audience
+      for buying and selling. For example, I could restrict my advertisement to appearing only for the students so that I
+      could dodge many unwanted conversations initiated by users who are less like to complete the transaction. Similarly,
+      a buyer wants to get a computer then buying it from a non-technical person is better because it is not heavily used.
+      Although it seems like a trivial filter it allows users to buy or sell quickly by reaching more potential audiences
+      and gives an additional dimension to make a prudent decision. It is deployed on https://gatormartuf.web.app/`,
+      gitLink: 'https://github.com/bhanupalagati/GatorMart',
+      learned: ['Angular', 'GO', 'MySQL', 'HTML & CSS', 'JEST Unit Testing', 'JEST Integration Testing']
+    },
+    {
+      name: 'Twitter Simulator',
+      duration: 'August 2021 - December 2021',
+      shortDesc: 'Twitter clone allows you to create new accounts, tweet, retweet, follow, dm other twitter users.',
+      desc: `This project implements a clone of twitter app using actor model developed with the help AKKA.NET and F#.
+              Developed Suave application to connect twitter engine with the API's. Distributed systems are too volatile
+              and exceptionally hard to define theoritically. So, whenever we are building a distributed system it is
+              advisable to build a simulation system which performs all the actions that our distributed system performs
+              in a day to day life in large scale. This helps us to understand the practical limitations of the system.
+              You can find the simulation here. https://github.com/bhanupalagati/TwitterSimulator
+              You can watch this video to get more details https://www.youtube.com/watch?v=XkLegQuhqhY`,
+      gitLink: 'https://github.com/bhanupalagati/TwitterClone',
+      learned: ['AKKA.NET', 'Suave', 'F#', 'Actor Model', 'ExpressJS']
+    },
+    {
       name: 'PLATFORM ADMIN',
       duration: 'February 2021 - August 2021',
       shortDesc: 'A one stop place for the platform admins to perform CURD and access preference operations.',
